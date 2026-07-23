@@ -1,0 +1,30 @@
+.table-section {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .table-section {
+        display: block;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+thead tr {
+    background-color: #164baf;
+    color: white;
+}
+
+tbody tr {
+    background-color: #f2f7ff;
+}
