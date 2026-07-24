@@ -4,7 +4,8 @@ export default function Table() {
     return (
         <section className="table-section">
             <h2>Planetary Facts at a Glance</h2>
-            <p>Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomers and researchers worldwide.</p>
+            <p>Below is a comparative table of major planets in our solar system. The data highlights key physical
+                <br /> properties used by astronomers and researchers worldwide.</p>
 
             <table>
                 <caption>Data about the planets of our solar system (Planetary facts taken from NASA)</caption>
