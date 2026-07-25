@@ -1,0 +1,71 @@
+#planet-grid {
+    padding: 40px 20px;
+    background-color: #f2f7ff;
+}
+
+#planet-grid h2 {
+    color: #164baf;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#planet-grid>p {
+    color: #0f2a44;
+    font-size: 11px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.planet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planet-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.planet-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.planet-caption {
+    padding: 15px;
+    text-align: center;
+}
+
+.planet-caption h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #212121;
+    margin: 10px 0;
+}
+
+.planet-caption p {
+    font-size: 14px;
+    color: #0f2a44;
+}
+
+@media (max-width: 768px) {
+    .planet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .planet-grid {
+        grid-template-columns: 1fr;
+    }
+}

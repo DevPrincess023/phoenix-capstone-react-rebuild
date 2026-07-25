@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Form.css';
 
 export default function Form() {
     const [formData, setFormData] = useState({
@@ -48,65 +49,75 @@ export default function Form() {
 
     return (
         <section id="form">
-            <h2>Have Questions About Planetary Science?</h2>
-            <p>Reach out and we'll get back to you.</p>
-
-            {submitted && <div style={{ color: 'green', marginBottom: '20px' }}>Thank you for your submission!</div>}
-
-            <form onSubmit={handleSubmit}>
-                <div style={{ marginBottom: '15px' }}>
-                    <label htmlFor="fullName">Full Name</label>
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        value={formData.fullName}
-                        onChange={handleChange}
-                        required
-                    />
+            <div className="form-container">
+                <div className="form-header">
+                    <h2>Have Questions About Planetary Science?</h2>
+                    <p>Interested in learning more about space, astronomy, or how planetary data is collected and analyzed?<br /> Reach out and we'll get back to you.</p>
                 </div>
 
-                <div style={{ marginBottom: '15px' }}>
-                    <label htmlFor="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                {submitted && <div className="success-message">Thank you for your submission!</div>}
 
-                <div style={{ marginBottom: '15px' }}>
-                    <label htmlFor="phoneNumber">Phone Number</label>
-                    <input
-                        type="tel"
-                        id="phoneNumber"
-                        name="phoneNumber"
-                        value={formData.phoneNumber}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+                <form onSubmit={handleSubmit}>
+                    <div className="form-grid">
+                        <div className="form-group">
+                            <label htmlFor="fullName">Full Name<span className="required">*</span></label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Full name"
+                                value={formData.fullName}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
 
-                <div style={{ marginBottom: '15px' }}>
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        maxLength="100"
-                        required
-                    />
-                    <p>{formData.message.length}/100 characters</p>
-                </div>
+                        <div className="form-group">
+                            <label htmlFor="email">Email<span className="required">*</span></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@example.com"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
 
-                <button type="submit" disabled={loading}>
-                    {loading ? 'Submitting...' : 'Submit'}
-                </button>
-            </form>
+                        <div className="form-group">
+                            <label htmlFor="phoneNumber">Phone Number<span className="required">*</span></label>
+                            <input
+                                type="tel"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                placeholder="Please enter a valid phone number"
+                                value={formData.phoneNumber}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="message">Message<span className="required">*</span></label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Enter your message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                maxLength="100"
+                                required
+                            />
+                            <div className="character-counter">{formData.message.length}/100 characters</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" className="submit-btn" disabled={loading}>
+                        {loading ? 'Submitting...' : 'Submit'}
+                    </button>
+                </form>
+            </div>
         </section>
     );
 }

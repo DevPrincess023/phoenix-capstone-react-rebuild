@@ -6,10 +6,11 @@ export default function Video() {
             <div className="container">
                 <div className="video-wrapper">
                     <video
-                        autoPlay
+                        autoplay
                         loop
                         muted
-                        playsInline
+                        playsinline
+                        controls
                         preload="metadata"
                         poster="/hero.png"
                         title="Planetary data visualization showing orbital paths and comparative sizes of planets in the solar system"
