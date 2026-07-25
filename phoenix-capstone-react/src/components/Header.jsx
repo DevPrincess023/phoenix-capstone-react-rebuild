@@ -5,7 +5,7 @@ export default function Header() {
         <nav className="navbar">
             <div className="navbar-container">
                 <a href="#" className="navbar-logo">
-                    Phoenix
+                    <img src="/logo.png" alt="Phoenix logo" className="navbar-logo-icon" />
                 </a>
             </div>
         </nav>
