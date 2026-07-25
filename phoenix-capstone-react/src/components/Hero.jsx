@@ -14,10 +14,10 @@ export default function Hero() {
                         breaks down the solar system in a clear, data-driven way.
                     </p>
                     <div className="hero-actions">
-                        <a href="#PlanetGrid" className="btn btn-primary">
+                        <a href="#planet-grid" className="btn btn-primary">
                             Explore the Data
                         </a>
-                        <a href="#Form" className="btn btn-outline">
+                        <a href="#form" className="btn btn-outline">
                             Contact Us
                         </a>
                     </div>

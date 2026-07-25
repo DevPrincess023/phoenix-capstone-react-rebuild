@@ -47,7 +47,7 @@ export default function Form() {
     };
 
     return (
-        <section>
+        <section id="form">
             <h2>Have Questions About Planetary Science?</h2>
             <p>Reach out and we'll get back to you.</p>
 

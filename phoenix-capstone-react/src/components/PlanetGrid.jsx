@@ -22,7 +22,7 @@ export default function PlanetGrid() {
     if (error) return <section>Error: {error}</section>;
 
     return (
-        <section>
+        <section id="planet-grid">
             <h2>Visualizing the Differences Between Planets</h2>
             <p>Each planet in our solar system has unique physical characteristics.</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
