@@ -6,13 +6,12 @@ export default function Video() {
             <div className="container">
                 <div className="video-wrapper">
                     <video
-                        autoplay
+                        autoPlay
                         loop
                         muted
-                        playsinline
+                        playsInline
                         controls
-                        preload="metadata"
-                        poster="/hero.png"
+                        preload="auto"
                         title="Planetary data visualization showing orbital paths and comparative sizes of planets in the solar system"
                         aria-label="Video showing planetary data visualization">
 

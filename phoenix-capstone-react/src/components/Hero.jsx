@@ -6,11 +6,11 @@ export default function Hero() {
             <div className="hero-container">
                 <div className="hero-content">
                     <h1 className="hero-title">
-                        Explore Our Solar System Through Data
+                        Explore Our Solar <br /> System Through Data
                     </h1>
                     <p className="hero-description">
-                        Understand the planets not just by name, but by measurable
-                        facts. From size and mass to gravity and density, this page
+                        Understand the planets not just by name, but by measurable <br />
+                        facts. From size and mass to gravity and density, this page <br />
                         breaks down the solar system in a clear, data-driven way.
                     </p>
                     <div className="hero-actions">
