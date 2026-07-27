@@ -114,7 +114,7 @@ export default function Form() {
                     </div>
 
                     <button type="submit" className="submit-btn" disabled={loading}>
-                        {loading ? 'Submitting...' : 'Submit'}
+                        {loading ? 'Submitting...' : 'Submit   >'}
                     </button>
                 </form>
             </div>
