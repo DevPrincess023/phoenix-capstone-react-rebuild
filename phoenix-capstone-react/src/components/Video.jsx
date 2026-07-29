@@ -23,7 +23,9 @@ export default function Video() {
                 <div className="content">
                     <h2>How Planetary Data Helps Us <br />Understand Space</h2>
                     <p>
-                        Planetary science goes beyond images. Comparing <strong>mass, diameter, gravity,</strong> and <strong>density</strong>, we gain insight into how planets form, behave, and interact within the solar system.
+                        Planetary science goes beyond images. Comparing <strong>mass, diameter,
+                            <br /> gravity,</strong> and <strong>density</strong>, we gain insight into how planets form, behave,
+                        <br /> and interact within the solar system.
                     </p>
                 </div>
             </div>
