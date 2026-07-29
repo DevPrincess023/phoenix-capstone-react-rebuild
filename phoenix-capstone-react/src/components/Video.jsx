@@ -10,7 +10,6 @@ export default function Video() {
                         loop
                         muted
                         playsInline
-                        controls
                         preload="auto"
                         title="Planetary data visualization showing orbital paths and comparative sizes of planets in the solar system"
                         aria-label="Video showing planetary data visualization">
