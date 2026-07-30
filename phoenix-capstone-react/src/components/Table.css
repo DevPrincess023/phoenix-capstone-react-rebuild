@@ -4,14 +4,10 @@
     background-color: #ffffff;
     max-width: 1400px;
     margin: 0 auto;
-    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-    .table-section {
-        display: block;
-    }
-}
 
 .table-section h2 {
     color: #164baf;
@@ -35,7 +31,7 @@ table {
     max-width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border-radius: 15px;
+    border-radius: 15px 15px 15px 15px;
     overflow: hidden;
     margin: 0 15px;
     background: white;
@@ -87,4 +83,10 @@ thead th:first-child {
 
 thead th:last-child {
     border-top-right-radius: 15px;
+}
+
+@media (min-width: 768px) {
+    .table-section {
+        display: block;
+    }
 }
