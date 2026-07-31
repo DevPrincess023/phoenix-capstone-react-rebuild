@@ -110,14 +110,18 @@
         grid-template-columns: 1fr;
     }
 
+    .form-header h2 {
+        text-align: left;
+    }
+
+    .form-header p {
+        text-align: left;
+    }
+
     .submit-btn {
-        display: flex;
-        justify-content: center;
-    }
-
-    .form-container {
         width: 100%;
-        align-items: left;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
     }
-
 }
