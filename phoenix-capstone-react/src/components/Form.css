@@ -106,9 +106,19 @@
 }
 
 @media (max-width: 390px) {
+    .form.container {
+        padding: 20px;
+    }
+
     .form-grid {
         grid-template-columns: 1fr;
     }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
 
     .form-header h2 {
         text-align: left;
@@ -119,9 +129,7 @@
     }
 
     .submit-btn {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
+        width: 100% !important;
+        max-width: 100%;
     }
 }
