@@ -159,7 +159,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -188,7 +188,7 @@
     }
 }
 
-@media (min-width: 390px) {
+@media (max-width: 390px) {
     .hero-actions {
         flex-direction: column;
         width: 100%;
@@ -198,5 +198,6 @@
         width: 100%;
         justify-content: center;
         display: inline-flex;
+        text-align: center;
     }
 }
