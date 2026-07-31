@@ -197,17 +197,16 @@
     .btn {
         width: 100%;
         justify-content: center;
-        display: flex;
-        text-align: center;
+        display: inline-flex;
     }
 
     .hero-description {
         font-size: 0.8rem;
-        text-align: center;
+        justify-content: center;
     }
 
-    hero-title {
+    .hero-title {
         font-size: 2rem;
-        text-align: center;
+        justify-content: center;
     }
 }
