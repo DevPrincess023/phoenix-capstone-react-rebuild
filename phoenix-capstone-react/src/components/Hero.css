@@ -211,5 +211,6 @@
 
     .hero-container {
         width: 100%;
+        align-items: center;
     }
 }
