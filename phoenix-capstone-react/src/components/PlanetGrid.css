@@ -57,14 +57,14 @@
     color: #0f2a44;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .planet-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 390px) {
+@media (min-width: 390px) {
     .planet-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
