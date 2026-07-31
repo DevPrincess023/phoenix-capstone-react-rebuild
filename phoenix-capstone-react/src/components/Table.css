@@ -87,6 +87,6 @@ thead th:last-child {
 
 @media (max-width: 768px) {
     .table-section {
-        display: block;
+        display: none;
     }
 }
