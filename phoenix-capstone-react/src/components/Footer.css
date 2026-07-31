@@ -86,10 +86,14 @@
 @media (max-width: 390px) {
     .footer-bottom {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
     }
 
     .academy {
-        text-align: center;
+        text-align: left;
+    }
+
+    .about-section {
+        text-align: left;
     }
 }

@@ -189,10 +189,9 @@
 }
 
 @media (max-width: 390px) {
-    .hero-actions {
+    /* .hero-actions {
         flex-direction: column;
-        width: 100%;
-    }
+    } */
 
     .btn {
         width: 100%;
@@ -208,5 +207,9 @@
     .hero-title {
         font-size: 2rem;
         justify-content: center;
+    }
+
+    .hero-container {
+        width: 100%;
     }
 }
